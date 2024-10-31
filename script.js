@@ -25,18 +25,34 @@
 // }
 // getMilk(5)
 
-let money = prompt("How much money do u have?")
+// let money = prompt("How much money do u have?")
 
-function buyFlowers(item){
-    let flower = Math.floor(money / item)
-    console.log("You can buy" + " " + flower + " " + "flowers" )
-    if (money <= item){
-        console.log("You dont't have enough money")
-    }else if (money >= item * 4){
-        console.log("wow! you can buy so many flowers!!" + flower)
-    }else {
-        return flower 
-    }
+// function buyFlowers(item){
+//     let flower = Math.floor(money / item)
+//     console.log("You can buy" + " " + flower + " " + "flowers" )
+//     if (money <= item){
+//         console.log("Sorry you dont't have enough money")
+//     }else if (money >= item * 4){
+//         console.log("wow! you can buy so many flowers!!" + flower)
+//     }else {
+//         return flower 
+//     }
     
+// }
+// buyFlowers(19.99)
+
+let question = prompt("Whats my name")
+
+const myList = ["Apple", "banana", "strawberry", "pear"]
+
+function answer(value){
+    if (question == value){
+        document.write("<h1>" + question + " Well done" + "</h1>")
+    }else if (question < value){
+        document.write("<li>" + myList[0] + "</li>",
+                       "<li>" + myList[3] + "</li>"
+        )
+    }
 }
-buyFlowers(19.99)
+answer(60)
+
