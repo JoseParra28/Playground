@@ -25,12 +25,18 @@
 // }
 // getMilk(5)
 
-function lifeInWeeks(age){
-    let yearsRemaining = 90 - age;
-    let days = yearsRemaining * 365;
-    let weeks = yearsRemaining * 52
-    let months = yearsRemaining * 12
+let money = prompt("How much money do u have?")
 
-    console.log("Yuo have" + ", " + yearsRemaining + ", " + months + ", " + "months" + " " + weeks + " " + "weeks" + "and" + " " + days + " " + "remaining")
+function buyFlowers(item){
+    let flower = Math.floor(money / item)
+    console.log("You can buy" + " " + flower + " " + "flowers" )
+    if (money <= item){
+        console.log("You dont't have enough money")
+    }else if (money >= item * 4){
+        console.log("wow! you can buy so many flowers!!" + flower)
+    }else {
+        return flower 
+    }
+    
 }
-lifeInWeeks(31)
+buyFlowers(19.99)
