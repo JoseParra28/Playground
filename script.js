@@ -50,9 +50,15 @@ function answer(value){
         document.write("<h1>" + question + " Well done" + "</h1>")
     }else if (question < value){
         document.write("<li>" + myList[0] + "</li>",
-                       "<li>" + myList[3] + "</li>"
+                       "<li>" + myList[2] + "</li>"
         )
+    }else if (question > value){
+        myList.push("Lemon")
+        document.write("<h1>" + myList[4] + "</h1>")
+    }else {
+        document.write("<h1>" + "Not a number" + "</h1>")
     }
+
 }
 answer(60)
 
