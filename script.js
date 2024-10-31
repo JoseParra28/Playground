@@ -18,11 +18,19 @@
 //     }
 // }
 // check(343)
+ 
+// function getMilk(money){
+//     let numberOfBottles = money / 1.5;
+//     console.log("Buy" + " " + Math.floor(numberOfBottles) + " " + "Botteles of milk")
+// }
+// getMilk(5)
 
-let 
+function lifeInWeeks(age){
+    let yearsRemaining = 90 - age;
+    let days = yearsRemaining * 365;
+    let weeks = yearsRemaining * 52
+    let months = yearsRemaining * 12
 
-function getMilk(money){
-    let numberOfBottles = money / 1.5;
-    console.log("Buy" + " " + Math.floor(numberOfBottles) + " " + "Botteles of milk")
+    console.log("Yuo have" + ", " + yearsRemaining + ", " + months + ", " + "months" + " " + weeks + " " + "weeks" + "and" + " " + days + " " + "remaining")
 }
-getMilk(5)
+lifeInWeeks(31)
