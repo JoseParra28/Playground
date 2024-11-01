@@ -94,3 +94,23 @@
 // buyFlowers(19.99)
 
 
+// let userInput = prompt("How much money do you have?")
+
+// function check (itemPrice){
+//     let cashier = Math.floor(userInput / itemPrice)
+//     console.log("You can buy " + cashier + " items")
+//     if (userInput < itemPrice){
+//         console.log("Sorry you dont have enough money")
+//     } else if (userInput > itemPrice * 4){
+//         console.log("Wow! You have so much money!")
+//     } else if (userInput == NaN){
+//          console.log("please only enter numbers")    
+//     } else {
+//         return cashier 
+//     }
+// }
+// check(10.99)
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
