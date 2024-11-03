@@ -111,6 +111,25 @@
 // }
 // check(10.99)
 
-for (let i = 1; i <= 10; i++) {
-    console.log(i);
+
+
+const choice = ["strawberry", "banana", "anana"];
+let question = prompt("What do you want" + choice);
+
+function priceCheck(){
+  for (let x of choice) {
+    if (question == choice[0]){
+      console.log(choice[0] + " cost 20 euros")
+      let cash = prompt("How much money do you have")
+      function cashier(){
+        let money = ma
+      }
+    }else if (question == choice[1]){
+      console.log(choice[1] + " cost 26 euros")
+    }else if (question == choice[2]){
+      console.log(choice[2] + " cost 29 euros")
+    }
   }
+}
+priceCheck()
+
