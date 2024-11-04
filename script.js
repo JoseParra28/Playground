@@ -121,8 +121,15 @@ function priceCheck(){
     if (question == choice[0]){
       console.log(choice[0] + " cost 20 euros")
       let cash = prompt("How much money do you have")
-      function cashier(){
-        let money = ma
+      function cashier(item){
+        let money = Math.floor(cash / item)
+        if (cash < item){
+          console.log("You dont have enough money" + money)
+        }else if(cash > item) {
+          console.log("You can buy " + money + "item" + choice)
+        } else {
+          return cashier
+        }
       }
     }else if (question == choice[1]){
       console.log(choice[1] + " cost 26 euros")
@@ -131,5 +138,5 @@ function priceCheck(){
     }
   }
 }
-priceCheck()
 
+priceCheck()
