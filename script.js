@@ -94,16 +94,32 @@
 // }
 // guessCheck()
 
-let outPut = [];
-outPut.push()
+// let outPut = [];
+// outPut.push()
 
-let names = ["jose", "nicolas", "maria", "jack", "peter"]
+// let names = ["jose", "nicolas", "maria", "jack", "peter"]
 
-function whoPays (names){
-    let numberOfP = names;
-    let randomSelect = Math.floor(Math.random() * numberOfP)
-    let randomPerson = [randomSelect]
+// function whoPays (names){
+//     let numberOfP = names;
+//     let randomSelect = Math.floor(Math.random() * numberOfP)
+//     let randomPerson = [randomSelect]
 
-    return randomPerson + "is pans"
+//     return randomPerson + "is pans"
+// }
+// whoPays()
+
+let number = 10;
+
+for (i=1; i < 10 + 1; i++){
+    document.write("<h2>" + i + "</h2>")
 }
-whoPays()
+
+const myprofile = {
+            myName: "Jose",
+            ocupation: "Developer",
+            birthYear: 1993 ,
+            currentYear:2024
+}
+
+const profile = `I am ${myprofile.myName}, I am a ${myprofile.birthYear-myprofile.currentYear}, years old ${myprofile.ocupation}/n`;
+document.write("<h2>" + profile + "</h2>")
