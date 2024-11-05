@@ -108,18 +108,46 @@
 // }
 // whoPays()
 
-let number = 10;
 
-for (i=1; i < 10 + 1; i++){
-    document.write("<h2>" + i + "</h2>")
+
+
+// const myprofile = {
+//             myName: "Jose",
+//             ocupation: "Developer",
+//             birthYear: 1993 ,
+//             currentYear:2024,
+//             drinks: false
+// }
+
+// const profile = `I am ${myprofile.myName}, I am a ${myprofile.birthYear-myprofile.currentYear}, years old ${myprofile.ocupation}/n`;
+// document.write("<h2>" + profile + "</h2>")
+
+// For loops keep riunning while condition instru
+
+// for (let rep=1; rep <= 10; rep++){
+//     console.log(`Weigths lifting reps ${rep}` )
+// }
+
+// const profile = [
+//     "jose",
+//     "Parra",
+//     "Developer",
+//     "boyfriend is nicolas",
+//     true,
+//     1993 -2024,
+//     ["jose", "nicolas"]
+// ]
+// for(let pic = 0; pic < profile.length; pic++){
+//     document.write("<h1>" + profile[pic] + "</h1>")
+// }
+
+const years = [1991,2007, 1969, 2020];
+const ages = [];
+for(let i = 0; i < years.length; i++){
+    ages.push(2037 - years[i]);
 }
+console.log(ages)
 
-const myprofile = {
-            myName: "Jose",
-            ocupation: "Developer",
-            birthYear: 1993 ,
-            currentYear:2024
-}
 
-const profile = `I am ${myprofile.myName}, I am a ${myprofile.birthYear-myprofile.currentYear}, years old ${myprofile.ocupation}/n`;
-document.write("<h2>" + profile + "</h2>")
+
+
