@@ -71,6 +71,13 @@ function match(){
     let checher = Math.random();
     checher = Math.floor(checher * 100) + 1;
     document.write("<h1>" + user1 + " and " + user2 + " have a " + checher + "% chance of falling in love" + "</h1>")
+    if (checher >= 90 ){
+        document.write("<h2" + user2 + user1 +" wow you guys are true soul mates" + "</h2>")
+    }else if (checher <= 10){
+        document.write("<h2>" + "Maybe not a match" + "</h2>")
+    }else {
+        document.write("<h2>" + "have fun together" + "</h2>")
+    }
 }
 match()
 
