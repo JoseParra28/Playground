@@ -81,16 +81,29 @@
 // }
 // match()
 
-let check = prompt("Welcome to my party, please enter you name.")
-let guessList = ["sara", "andrew", "michael", "teresa", "jack"]
+// let check = prompt("Welcome to my party, please enter you name.")
+// let guessList = ["sara", "andrew", "michael", "teresa", "jack"]
 
-function guessCheck(){
+// function guessCheck(){
     
-    if (guessList.includes(check)){
-        console.log("welcome " + check)
-    } else {
-        console.log("sorry not today, " + check + " is not in my guesslist")
-    }
-}
-guessCheck()
+//     if (guessList.includes(check)){
+//         document.write("<h2>" + "welcome " + check + "</h2>")
+//     } else {
+//         document.write("<h2>" + "sorry not today, " + check + " is not in my list" + "</h2>")
+//     }
+// }
+// guessCheck()
 
+let outPut = [];
+outPut.push()
+
+let names = ["jose", "nicolas", "maria", "jack", "peter"]
+
+function whoPays (names){
+    let numberOfP = names;
+    let randomSelect = Math.floor(Math.random() * numberOfP)
+    let randomPerson = [randomSelect]
+
+    return randomPerson + "is pans"
+}
+whoPays()
