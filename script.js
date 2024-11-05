@@ -45,32 +45,23 @@
 
 // const myList = ["Apple", "banana", "strawberry", "pear"]
 
-// function answer(value){
-//     if (question == value){
-//         document.write("<h1>" + question + " Well done" + "</h1>")
-//     }else if (question < value){
-//         document.write("<li>" + myList[0] + "</li>",
-//                        "<li>" + myList[2] + "</li>"
-//         )
-//     }else if (question > value){
-//         myList.push("Lemon")
-//         document.write("<h1>" + myList[4] + "</h1>")
-//     }else {
-//         document.write("<h1>" + "Not a number" + "</h1>")
-//     }
+function answer(value){
+    if (question == value){
+        document.write("<h1>" + question + " Well done" + "</h1>")
+    }else if (question < value){
+        document.write("<li>" + myList[0] + "</li>",
+                       "<li>" + myList[2] + "</li>"
+        )
+    }else if (question > value){
+        myList.push("Lemon")
+        document.write("<h1>" + myList[4] + "</h1>")
+    }else {
+        document.write("<h1>" + "Not a number" + "</h1>")
+    }
 
-// }
-// answer(60)
-// let fruits = "apple";
-
-
-let user1 = prompt("Lover 1")
-let user2 = prompt("Lover 2")
-
-function match(){
-    let checher = Math.random();
-    checher = Math.floor(checher * 100) + 1;
-console.log(user1 + " and " + user2 + " have a " + checher + "% chance of falling in love")
 }
-match()
+answer(60)
+
+
+
 
