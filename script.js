@@ -171,7 +171,22 @@
 //     }}
 // }
 // calculator()
-let input1 = prompt("First input");
+// let input1 = prompt("First input");
+
+function turnOff() {
+    const hideImage = document.querySelector('.image');
+    hideImage.style.display = 'none';
+}
+function turnOn() {
+    const hideImage = document.querySelector('.image');
+    hideImage.style.display = 'block';
+}
+
+document.getElementsByTagName("li")[3].style.color = "purple";
+
+document.getElementsByClassName("demo")[0].innerHTML = "Change this";
+
+
 
 
 
