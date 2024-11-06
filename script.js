@@ -141,12 +141,41 @@
 //     document.write("<h1>" + profile[pic] + "</h1>")
 // }
 
-const years = [1991,2007, 1969, 2020];
-const ages = [];
-for(let i = 0; i < years.length; i++){
-    ages.push(2037 - years[i]);
-}
-console.log(ages)
+// const years = [1991,2007, 1969, 2020];
+// const ages = [];
+// for(let i = 0; i < years.length; i++){
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages)
+
+// let input1 = prompt("First input");
+// let operators = prompt(["+ ", "- ", "/ ", "* "]);
+// let input2 = prompt("Second imput");
+
+// function calculator(){
+//     let addition = Math.floor(input1 + input2);
+//     let substraction = Math.floor(input1 - input2);
+//     let divicion = Math.floor(input1 / input2);
+//     let multiplication = Math.floor(input1 * input2);
+//     if(operators.includes(operators[0])){
+//         console.log(typeof(addition))
+//     } else if(operators.includes(operators[1])){
+//         console.log(substraction)
+//     }else if(operators.includes(operators[2])){
+//         console.log(divicion)
+//     }else if (operators.includes(operators[3])){
+//         console.log(multiplication)
+//     }
+//     else {{
+//         return console.log("You must enter a numeric value")
+//     }}
+// }
+// calculator()
+let input1 = prompt("First input");
+
+
+
+
 
 
 
