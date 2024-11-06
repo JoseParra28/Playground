@@ -11,3 +11,7 @@ li {
     display: block;
     height: 20vh;
 }
+p {
+    /* display: none; */
+    color: white;
+}
