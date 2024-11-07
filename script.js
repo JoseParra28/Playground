@@ -1,4 +1,4 @@
-
+'use strict';
 
 // let question = prompt("Whats's my number");
 // let correct = "Thats correct";
@@ -194,21 +194,6 @@ function changeColor(newColor) {
 }
 
 // Quiz game
+ 
 
-
-
-
-const questionVar = document.querySelector('.question');
-const answerBtns = document.querySelector('.btn')
-
-
-const questions = [
-    {q:"The sky is blue", a:"t"},
-    {q:"Blood is read", a:"t"},
-    {q:"Roses are green", a:"f"}
-]
-
-questions.forEach(question) => {
-    let userInput = 
-}
 
