@@ -7,29 +7,24 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <ul>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List item 3</li>
-        <li>List item 4</li>
-    </ul>
-    <h1 class="demo">test</h1>
-    <h2 class="h2class">h2 class</h2>
-    <button onclick="turnOn()" class="show">Show image</button>
-    <button onclick="turnOff()" class="hide">Hide image</button>
-    <img class="image" src="/media/software-development-costs-1128x635.jpg" alt="">
-    <br>
-
-    <p id="parra">Change color</p>
-    <p id="parra2">Change text</p>
-    
-    <button id="redBtn" onclick="changeColor('red')">Red</button>
-    <button id="greenBtn" onclick="changeColor('green')">Green</button>
-
-    <br>
-
+    <div class="container">
+        <h1>Refresh Me</h1>
+  
+        <div class="dice">
+          <p>Player 1</p>
+          <img class="img1" src="/media/dice6.png" />
+        </div>
+  
+        <div class="dice">
+          <p>Player 2</p>
+          <img class="img2" src="/media/dice6.png" />
+        </div>
+      </div>
+  
+      <footer>www 🎲 App Brewery 🎲 com</footer>
 
 
     <script src="/script.js"></script>
+    <script src="/dice.js"></script>
 </body>
 </html>

@@ -211,24 +211,28 @@
 // }
 // console.log(myObjescts.calcAge())
 
-function turnOff() {
-    const hideImage = document.querySelector('.image');
-    hideImage.style.display = 'none';
-}
-function turnOn() {
-    const hideImage = document.querySelector('.image');
-    hideImage.style.display = 'block';
-}
+// function turnOff() {
+//     const hideImage = document.querySelector('.image');
+//     hideImage.style.display = 'none';
+// }
+// function turnOn() {
+//     const hideImage = document.querySelector('.image');
+//     hideImage.style.display = 'block';
+// }
 
-document.getElementsByTagName("li")[3].style.color = "purple";
+// document.getElementsByTagName("li")[3].style.color = "purple";
 
-document.getElementsByClassName("demo")[0].innerHTML = "Change this";
+// document.getElementsByClassName("demo")[0].innerHTML = "Change this";
 
-document.querySelector(".h2class").innerHTML = "Change that"
+// document.querySelector(".h2class").innerHTML = "Change that"
 
-function changeColor(newColor) {
-    const elem = document.querySelector('#parra')
-    elem.style.color = newColor
-}
-document.querySelector('#redBtn').style.backgroundColor = "red"
-document.querySelector('#greenBtn').style.backgroundColor = "green"
+// function changeColor(newColor) {
+//     const elem = document.querySelector('#parra')
+//     elem.style.color = newColor
+// }
+// document.querySelector('#redBtn').style.backgroundColor = "red"
+// document.querySelector('#greenBtn').style.backgroundColor = "green"
+
+// document.querySelector(".btn").classList.add("btnClass")
+// document.querySelector("h3").innerHTML = "<em> Goodbye </em>"
+// document.querySelector("a").attributes;
