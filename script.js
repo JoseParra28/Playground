@@ -173,6 +173,44 @@
 // calculator()
 // let input1 = prompt("First input");
 
+
+
+// Quiz game
+ 
+// const retireYear = (birthYear, firstName) => {
+//     const age = 2024 - birthYear;
+//     const retirement = 65 - age;
+//     return `${firstName} retires in ${retirement} years `
+// }
+// console.log(retireYear(1993, "Jose"))
+// console.log(retireYear(1991, "Joe"))
+// console.log(retireYear(1999, "Tom"))
+
+// function cutFruit(fruits){
+//     return fruits / 4;
+// }
+
+// function foodProcessor (apples, oranges, bananas){
+//     const applePieces = cutFruit(apples)
+//     const orangePieces = cutFruit(oranges)
+//     const bananaPieces = cutFruit(bananas)
+
+//     const juice = `Make joice with ${applePieces} apples , ${orangePieces} bananas and ${bananaPieces} oranges to make the best smooty`
+//     return juice
+// }
+// console.log(foodProcessor(2,5,9))
+
+// const myObjescts = {
+//     Name: 'Jose',
+//     age: 1993,
+//     ocupacion: 'Developer'
+// }
+// function calcAge (){
+//     console.log(this)
+//     return 2024 - this.age
+// }
+// console.log(myObjescts.calcAge())
+
 function turnOff() {
     const hideImage = document.querySelector('.image');
     hideImage.style.display = 'none';
@@ -192,8 +230,5 @@ function changeColor(newColor) {
     const elem = document.querySelector('#parra')
     elem.style.color = newColor
 }
-
-// Quiz game
- 
-
-
+document.querySelector('#redBtn').style.backgroundColor = "red"
+document.querySelector('#greenBtn').style.backgroundColor = "green"
