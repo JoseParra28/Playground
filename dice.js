@@ -1,22 +1,20 @@
 'load strict'
 
-
+// Getting random numbers 
 const randomNumber = Math.floor(Math.random() * 6) + 1;
-const randomDiceImg = "dice" + randomNumber + ".png";
-const randomImgSource = "media/" + randomDiceImg
+const randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
+// Selecting what images to change
 const image1 = document.querySelectorAll("img")[0];
 const image2 = document.querySelectorAll("img")[1];
 
+// Change image name with random numbers
+const randomImgSource = `media/dice${randomNumber}.png`;
+const randomImgSource2 = `media/dice${randomNumber2}.png`
 
+// set element attribute with new source
 image1.setAttribute("src", randomImgSource)
-image2.setAttribute("src", randomImgSource)
-
-const randomNumber2 = Math.floor(Math.random(1) * 6) + 2;
-const randomImgSource2 = "media/dice" + randomNumber2 + ".png"
-document.querySelectorAll("img")[1].setAttribute("src", randomImgSource2);
-
-
+image2.setAttribute("src", randomImgSource2)
 
 if ( randomNumber > randomNumber2){
     document.querySelector("h1").innerHTML = "Player 1 wins";
@@ -29,9 +27,4 @@ if ( randomNumber > randomNumber2){
 }
 
 
-const randomNames = ["Maria", "Nicolas", "Antonio", "Teresa"]
-const magiNumber = Math.floor(Math.random()*randomNames.length)
-const home = document.querySelector(".randomnumber").innerHTML = magiNumber
-
-console.log(magiNumber)
 
