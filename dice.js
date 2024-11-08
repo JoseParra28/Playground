@@ -13,8 +13,9 @@ const randomImgSource = `media/dice${randomNumber}.png`;
 const randomImgSource2 = `media/dice${randomNumber2}.png`
 
 // set element attribute with new source
-image1.setAttribute("src", randomImgSource)
-image2.setAttribute("src", randomImgSource2)
+
+// image1.setAttribute("src", randomImgSource)
+// image2.setAttribute("src", randomImgSource2)
 
 if ( randomNumber > randomNumber2){
     document.querySelector("h1").innerHTML = "Player 1 wins";
@@ -26,5 +27,18 @@ if ( randomNumber > randomNumber2){
     document.querySelector("h1").innerHTML = "It's a tie";
 }
 
+// Quiz game
+const magicNum = Math.floor(Math.random(0) * 5) + 1;
+const question = document.querySelector(".question");
+const userInput = document.querySelector(".guess").value;
+const checkBtn = document.querySelector(".check");
 
-
+checkBtn.addEventListener('click', function(){
+    if(userInput < magicNum){
+        console.log("great")
+    }else {
+        console.log(document.querySelector(".guess").value);
+        console.log(magicNum)
+    }
+  
+})
