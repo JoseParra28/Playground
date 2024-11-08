@@ -29,19 +29,24 @@ if ( randomNumber > randomNumber2){
 
 // Quiz game
 const magicNum = Math.floor(Math.random(0) * 10) + 1;
-const question = document.querySelector(".question");
+const question = document.querySelector(".questions");
 const userInput = document.querySelector(".guess").value;
 const checkBtn = document.querySelector(".check");
 
 checkBtn.addEventListener('click', function(){
-    if(userInput === magicNum){
-        console.log("great")
-    }else {
-        console.log(document.querySelector(".guess").value);
-        document.querySelector('.questions').textContent = 'well done'
-        console.log(magicNum)
+    const guess = Number(document.querySelector(".guess").value);
+    if (!guess){
+        question.textContent = 'No Number'
+    } else if (guess < magicNum){
+        question.textContent = 'Too Low'
+    }else if (guess > magicNum){
+        question.textContent = 'Too High'
+    } else if (guess == magicNum) {
+        question.textContent = 'Well Done'
     }
-  
-})
+    console.log(guess, typeof guess)
+    console.log(magicNum)
+    })
+
 
 
