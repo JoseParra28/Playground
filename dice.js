@@ -14,9 +14,6 @@ const randomImgSource2 = `media/dice${randomNumber2}.png`
 
 // set element attribute with new source
 
-// image1.setAttribute("src", randomImgSource)
-// image2.setAttribute("src", randomImgSource2)
-
 if ( randomNumber > randomNumber2){
     document.querySelector("h1").innerHTML = "Player 1 wins";
    
@@ -30,8 +27,8 @@ if ( randomNumber > randomNumber2){
 // Quiz game
 const magicNum = Math.floor(Math.random(0) * 10) + 1;
 const question = document.querySelector(".questions");
-const userInput = document.querySelector(".guess").value;
 const checkBtn = document.querySelector(".check");
+let score = ("");
 
 checkBtn.addEventListener('click', function(){
     const guess = Number(document.querySelector(".guess").value);
@@ -43,10 +40,25 @@ checkBtn.addEventListener('click', function(){
         question.textContent = 'Too High'
     } else if (guess == magicNum) {
         question.textContent = 'Well Done'
+        score++
+        console.log(`Your is ${score} `)
     }
     console.log(guess, typeof guess)
     console.log(magicNum)
     })
 
+    const guessList = ("jose");
+    const checkList = document.querySelector('.party').value;
+    const checkBtn2 = document.querySelector('.btn-2')
+
+    checkBtn2.addEventListener('click', function(){
+        const guessCheck = document.querySelector('.party').value;
+        if (guessCheck == guessList){
+            console.log(`hello ${guessCheck}`)
+        }else {
+            console.log("not working")
+        }
+
+    })
 
 
