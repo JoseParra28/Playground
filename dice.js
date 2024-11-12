@@ -28,7 +28,7 @@ if ( randomNumber > randomNumber2){
 const magicNum = Math.trunc(Math.random(0) * 10) + 1;
 const question = document.querySelector(".questions");
 const checkBtn = document.querySelector(".check");
-let score = 20;
+let score = 10;
 
 document.querySelector(".number").textContent = magicNum
 document.querySelector(".score").textContent = score
@@ -42,6 +42,10 @@ checkBtn.addEventListener('click', function(){
         question.textContent = 'Too Low' 
         score--;
         document.querySelector(".score").textContent = score
+        if (score === 0){
+            console.log("game over")
+             document.getElementsByTagName("body")[0].style.backgroundColor = "red"
+        }
     }else if (guess > magicNum){
         question.textContent = 'Too High'
         score--;
@@ -49,12 +53,19 @@ checkBtn.addEventListener('click', function(){
     } else if (guess === magicNum) {
         question.textContent = 'Well Done'
         document.querySelector(".score").textContent = score
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#60b347"
         console.log(`Your is ${score} `)
     }
     console.log(guess, typeof guess)
     console.log(magicNum)
     })
 
+const reStart = document.querySelector(".again");
+
+reStart.addEventListener("click", function(){
+    console.log("You clicked me")
+
+})
    
 
 
