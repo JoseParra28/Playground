@@ -89,17 +89,18 @@ const closeModal = function(){
     modal.classList.add("hidden")
 };
 
-for (let i = 0; i < btnsOpenModal.length; i++)
-    btnsOpenModal[i].addEventListener('click', function(){
-        if (btnsOpenModal[0]){
-            console.log("you clicked btn 1")
-        }else {
-            console.log("not working")
-        }
-        console.log(btnsOpenModal[i])
+const openModal = function (){
         modal.classList.remove("hidden")
-    });
+}
+
+for (let i = 0; i < btnsOpenModal.length; i++)
+    btnsOpenModal[i].addEventListener('click', openModal);
 
 
+btnCloseModal.addEventListener("click", closeModal);
 
- btnCloseModal.addEventListener("click", closeModal);
+document.addEventListener('keydown', function(eventTest){
+    if (eventTest.key === 'Escape'){
+        modal.classList.add("hidden")
+    }
+})
