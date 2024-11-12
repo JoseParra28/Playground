@@ -100,7 +100,8 @@ for (let i = 0; i < btnsOpenModal.length; i++)
 btnCloseModal.addEventListener("click", closeModal);
 
 document.addEventListener('keydown', function(eventTest){
-    if (eventTest.key === 'Escape'){
-        modal.classList.add("hidden")
-    }
+        if (!modal.classList.contains("hidden")){
+            closeModal();
+        }
+            
 })
