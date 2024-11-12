@@ -1,8 +1,8 @@
 'load strict'
 
 // Getting random numbers 
-const randomNumber = Math.floor(Math.random() * 6) + 1;
-const randomNumber2 = Math.floor(Math.random() * 6) + 1;
+let randomNumber = Math.floor(Math.random() * 6) + 1;
+let randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
 // Selecting what images to change
 const image1 = document.querySelectorAll("img")[0];
@@ -23,6 +23,13 @@ if ( randomNumber > randomNumber2){
 }else {
     document.querySelector("h1").innerHTML = "It's a tie";
 }
+
+let reRoll = document.querySelector(".reroll");
+
+reRoll.addEventListener("click", function(){
+    randomNumber = Math.floor(Math.random() * 6) + 1;
+    randomNumber2 = Math.floor(Math.random() * 6) + 1;
+})
 
 // Quiz game
 let magicNum = Math.trunc(Math.random(0) * 10) + 1;
