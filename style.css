@@ -57,3 +57,6 @@ section {
 #hide {
   display: none;
 }
+.hidden {
+  display: none;
+}
