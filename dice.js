@@ -47,18 +47,6 @@ checkBtn.addEventListener('click', function(){
     console.log(magicNum)
     })
 
-    const guessList = ("jose");
-    const checkList = document.querySelector('.party').value;
-    const checkBtn2 = document.querySelector('.btn-2')
-
-    checkBtn2.addEventListener('click', function(){
-        const guessCheck = document.querySelector('.party').value;
-        if (guessCheck == guessList){
-            console.log(`hello ${guessCheck}`)
-        }else {
-            console.log("not working")
-        }
-
-    })
+   
 
 
