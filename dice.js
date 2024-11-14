@@ -29,6 +29,7 @@ let reRoll = document.querySelector(".reroll");
 reRoll.addEventListener("click", function(){
     randomNumber = Math.floor(Math.random() * 6) + 1;
     randomNumber2 = Math.floor(Math.random() * 6) + 1;
+    console.log(randomNumber, randomNumber2)
 })
 
 // Quiz game
@@ -100,8 +101,31 @@ for (let i = 0; i < btnsOpenModal.length; i++)
 btnCloseModal.addEventListener("click", closeModal);
 
 document.addEventListener('keydown', function(eventTest){
-        if (!modal.classList.contains("hidden")){
+        if (!modal.classList.contains("hidden"))
             closeModal();
         }
-            
+        
+    
+)
+
+// Adding items
+let cart = 0;
+let items = ["apples", "bananas", "kiwis", "mandarin"];
+const itemsBtn = document.querySelector(".items");
+const addBtn = document.querySelector(".add");
+const removeBtn = document.querySelector(".remove");
+const cartMessage = document.querySelector(".cart-message");
+
+
+addBtn.addEventListener("click", function(){
+    cart++;
+    cartMessage.textContent = `You have added ${cart}, items to your cart`
 })
+
+removeBtn.addEventListener("click", function(){
+    cart--;
+    cartMessage.textContent = `You have removed ${cart}, from your cart`
+})
+
+for(i = 0; i < items.length; i++)
+    console.log(items[i])
