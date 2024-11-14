@@ -236,3 +236,20 @@
 // document.querySelector(".btn").classList.add("btnClass")
 // document.querySelector("h3").innerHTML = "<em> Goodbye </em>"
 // document.querySelector("a").attributes;
+
+// OBJECTS 
+
+// function MyFactory (name, age, hasWorkPermit, languages){
+//     this.name = name;
+//     this.age = age;
+//     this.hasWorkPermit = hasWorkPermit;
+//     this.languages = languages;
+//     this.clean = function() {
+//         console.log(`${this.name} is cleaning right now`)
+//     }
+// }
+
+// let empleyees = new MyFactory("Jose", 31, true, ["Spanish", "English"])
+// let empleyees2 = new MyFactory("Nicolas", 31, true, ["Spanish", "English"])
+
+// console.log(empleyees.clean())
