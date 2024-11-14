@@ -7,11 +7,16 @@ for(let i =0; i < allDrums.length; i++){
         switch (btnInner) {
             case "w":
                 let audio1 = new Audio("/drum/images/sounds/crash.mp3")
+                let numbers = 0;
+                numbers++;
                 audio1.play()
+                
+                console.log(`You have chicked ${numbers} times on drum ${this.innerHTML} `)
                 break;
                 case "a":
                     let audio2 = new Audio("/drum/images/sounds/kick-bass.mp3")
                     audio2.play()
+
                     break;
                     case "s":
                         let audio3 = new Audio("/drum/images/sounds/snare.mp3")
