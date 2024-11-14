@@ -45,3 +45,14 @@ for(let i =0; i < allDrums.length; i++){
     })
 }
 
+function MyFactory (name, age, hasWorkPermit, languages){
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.languages = languages
+}
+
+let empleyees = new MyFactory("Jose", 31, true, ["Spanish", "English"])
+let empleyees2 = new MyFactory("Nicolas", 31, true, ["Spanish", "English"])
+
+console.log(empleyees, empleyees2)
