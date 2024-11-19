@@ -253,3 +253,51 @@
 // let empleyees2 = new MyFactory("Nicolas", 31, true, ["Spanish", "English"])
 
 // console.log(empleyees.clean())
+
+// Scroll
+
+// window.onscroll = ()=> {
+//     console.log("you are scroling")
+// }
+
+
+// window.addEventListener("scroll", ()=> [
+//     console.log("you are scroling")
+// ])
+
+
+
+// Function to execute when scroll position reaches a certain threshold
+// function onScrollTrigger() {
+    // Get the scroll position
+    // const scrollY = window.scrollY || window.pageYOffset;
+
+    // Set a threshold (for example, 200px from the top of the page)
+    
+    // let scrollTrigger = document.querySelector(".trigger")
+    // const threshold =  scrollTrigger.window;
+
+
+    // if (scrollY >= threshold) {
+        // Do something when scroll position exceeds the threshold
+        // console.log('You have scrolled past the threshold!');
+        // Optionally, you can add classes to elements, or trigger animations
+    // } else {
+        // Do something when scroll position is less than the threshold
+        // console.log('You are above the threshold');
+//     }
+// }
+
+// Attach the scroll event listener
+// window.addEventListener('scroll', onScrollTrigger);
+
+window.addEventListener("scroll", () => {
+
+    const scrolled = window.scrollY
+    console.log(scrolled)
+
+    if (scrolled >= 100){
+        document.querySelector(".change").innerHTML = "Text change"
+        // document.querySelector(".change").computedStyleMap.color = "red"
+    }
+})
