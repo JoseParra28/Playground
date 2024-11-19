@@ -291,13 +291,16 @@
 // Attach the scroll event listener
 // window.addEventListener('scroll', onScrollTrigger);
 
+let textChange = document.querySelector(".change-2");
 window.addEventListener("scroll", () => {
 
     const scrolled = window.scrollY
     console.log(scrolled)
 
-    if (scrolled >= 100){
-        document.querySelector(".change").innerHTML = "Text change"
-        // document.querySelector(".change").computedStyleMap.color = "red"
+    if (scrolled >= 100 && scrolled <= 300 ){
+        document.querySelector(".change").style.color = "red";
+        textChange.innerHTML = "Second change";
+    } else{
+        console.log("It works")
     }
 })
