@@ -304,3 +304,5 @@ window.addEventListener("scroll", () => {
         console.log("It works")
     }
 })
+
+console.log("Hello there")
